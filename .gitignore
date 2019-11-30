@@ -1,7 +1,7 @@
-.idea/
+.*
 metastore_db/
 project/target
 spark-warehouse/
 target/
 derby.log
-.DS_Store
+_SUCCESS
