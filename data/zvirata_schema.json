@@ -1,0 +1,81 @@
+﻿{
+  "@context": ["http://www.w3.org/ns/csvw",{"@language": "cs"}],
+  "url": "270230-19data053119.csv",
+  "tableSchema": {
+    "columns": [{
+      "name": "idhod",
+      "titles": "idhod",
+      "dc:description":"unikátní identifikátor údaje Veřejné databáze ČSÚ",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "hodnota",
+      "titles": "hodnota",
+      "dc:description":"zjištěná hodnota",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "stapro_kod",
+      "titles": "stapro_kod",
+      "dc:description":"kód statistické proměnné ze systému SMS UKAZ",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "druhzvire_cis",
+      "titles": "druhzvire_cis",
+      "dc:description":"kód číselníku pro druh hospodářského zvířete",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "druhzvire_kod",
+      "titles": "druhzvire_kod",
+      "dc:description":"kód položky číselníku pro druh hospodářského zvířete",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "refobdobi",
+      "titles": "refobdobi",
+      "dc:description":"referenční období ve formátu RRRRMMDD",
+      "required": true,
+      "datatype": "date"
+    }, {
+      "name": "rok",
+      "titles": "rok",
+      "dc:description":"rok referenčního období ve formátu RRRR",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "uzemi_cis",
+      "titles": "uzemi_cis",
+      "dc:description":"kód číselníku pro území",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "uzemi_kod",
+      "titles": "uzemi_kod",
+      "dc:description":"kód položky z číselníku území",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "uzemi_txt",
+      "titles": "uzemi_txt",
+      "dc:description":"text položky z číselníku území",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "stapro_txt",
+      "titles": "stapro_txt",
+      "dc:description":"text statistické proměnné",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "druhzvire_txt",
+      "titles": "druhzvire_txt",
+      "dc:description":"text položky číselníku pro druh hospodářského zvířete",
+      "required": true,
+      "datatype": "string"
+    }
+    ],
+        "primaryKey": "idhod"
+  }
+}

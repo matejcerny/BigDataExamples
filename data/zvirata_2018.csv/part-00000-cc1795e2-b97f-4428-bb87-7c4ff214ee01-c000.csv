@@ -1,0 +1,127 @@
+idhod,hodnota,stapro_kod,DRUHZVIRE_cis,DRUHZVIRE_kod,refobdobi,rok,uzemi_cis,uzemi_kod,STAPRO_TXT,uzemi_txt,DRUHZVIRE_txt
+780787432,164983,5560,132,1,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Skot
+780789990,220052,5560,132,1,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Skot
+780787352,98298,5560,132,1,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Skot
+780787353,43941,5560,132,1,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Skot
+780789770,1415770,5560,132,1,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Skot
+780790106,84338,5560,132,1,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Skot
+780790696,117055,5560,132,1,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Skot
+780790027,62764,5560,132,1,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Skot
+780787442,221897,5560,132,1,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Skot
+780787424,64678,5560,132,1,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Skot
+780789571,92806,5560,132,1,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Skot
+780789051,44339,5560,132,1,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Skot
+780789311,50012,5560,132,1,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Skot
+780789197,150607,5560,132,1,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Skot
+780790132,1479,5560,132,60,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Kozy
+780789677,3001,5560,132,60,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Kozy
+780787976,1550,5560,132,60,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Kozy
+780789332,1537,5560,132,60,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Kozy
+780788971,30316,5560,132,60,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Kozy
+780789144,1797,5560,132,60,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Kozy
+780789106,1718,5560,132,60,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Kozy
+780787927,1356,5560,132,60,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Kozy
+780787690,3277,5560,132,60,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Kozy
+780790247,1888,5560,132,60,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Kozy
+780789424,1599,5560,132,60,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Kozy
+780789076,2189,5560,132,60,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Kozy
+780788972,3703,5560,132,60,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Kozy
+780790248,5222,5560,132,60,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Kozy
+780789785,2311,5560,132,70,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Koně
+780790097,1668,5560,132,70,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Koně
+780787637,2736,5560,132,70,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Koně
+780789145,1294,5560,132,70,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Koně
+780789318,35181,5560,132,70,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Koně
+780787793,2568,5560,132,70,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Koně
+780790588,2467,5560,132,70,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Koně
+780789455,1825,5560,132,70,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Koně
+780788706,4671,5560,132,70,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Koně
+780789262,1533,5560,132,70,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Koně
+780789661,1829,5560,132,70,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Koně
+780787450,2285,5560,132,70,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Koně
+780788140,2402,5560,132,70,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Koně
+780787759,7592,5560,132,70,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Koně
+780787664,70828,5560,132,7,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Krávy
+780789041,87722,5560,132,7,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Krávy
+780790614,39931,5560,132,7,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Krávy
+780790234,20640,5560,132,7,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Krávy
+780789211,587322,5560,132,7,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Krávy
+780787389,39018,5560,132,7,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Krávy
+780788849,45759,5560,132,7,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Krávy
+780788397,27652,5560,132,7,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Krávy
+780790125,91142,5560,132,7,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Krávy
+780790110,25538,5560,132,7,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Krávy
+780790613,39619,5560,132,7,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Krávy
+780789773,17715,5560,132,7,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Krávy
+780790563,21280,5560,132,7,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Krávy
+780790233,60478,5560,132,7,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Krávy
+780788144,2416384,5560,132,80,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Drůbež
+780787938,602520,5560,132,80,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Drůbež
+780790152,2780494,5560,132,80,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Drůbež
+780787146,273587,5560,132,80,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Drůbež
+780789975,23572784,5560,132,80,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Drůbež
+780788384,786789,5560,132,80,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Drůbež
+780787762,4401132,5560,132,80,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Drůbež
+780787797,804914,5560,132,80,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Drůbež
+780787145,1906817,5560,132,80,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Drůbež
+780789568,3536790,5560,132,80,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Drůbež
+780788385,609373,5560,132,80,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Drůbež
+780787826,427459,5560,132,80,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Drůbež
+780790355,66705,5560,132,80,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Drůbež
+780788951,4959820,5560,132,80,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Drůbež
+780787362,116173,5560,132,30,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Prasata
+780787935,316819,5560,132,30,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Prasata
+780790319,63563,5560,132,30,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Prasata
+780789203,14596,5560,132,30,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Prasata
+780787167,1557218,5560,132,30,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Prasata
+780788051,37671,5560,132,30,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Prasata
+780787956,170218,5560,132,30,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Prasata
+780787720,76670,5560,132,30,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Prasata
+780790476,103617,5560,132,30,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Prasata
+780787363,136968,5560,132,30,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Prasata
+780787421,85838,5560,132,30,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Prasata
+780787391,98455,5560,132,30,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Prasata
+780787666,19867,5560,132,30,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Prasata
+780789214,316763,5560,132,30,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Prasata
+780789266,680885,5560,132,81,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Slepice
+780787941,53341,5560,132,81,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Slepice
+780787459,1845124,5560,132,81,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Slepice
+780787675,157733,5560,132,81,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Slepice
+780787396,7989588,5560,132,81,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Slepice
+780788148,434587,5560,132,81,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Slepice
+780788825,1615171,5560,132,81,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Slepice
+780790511,147995,5560,132,81,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Slepice
+780790136,345374,5560,132,81,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Slepice
+780790326,788741,5560,132,81,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Slepice
+780787799,146772,5560,132,81,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Slepice
+780789789,11195,5560,132,81,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Slepice
+780787220,2741,5560,132,81,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Slepice
+780787586,1759929,5560,132,81,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Slepice
+780787949,7050,5560,132,33,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Prasnice chovné
+780787972,18520,5560,132,33,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Prasnice chovné
+780789139,3658,5560,132,33,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Prasnice chovné
+780787453,93,5560,132,33,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Prasnice chovné
+780789325,92220,5560,132,33,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Prasnice chovné
+780790713,2290,5560,132,33,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Prasnice chovné
+780790129,9798,5560,132,33,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Prasnice chovné
+780787807,4806,5560,132,33,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Prasnice chovné
+780787294,7732,5560,132,33,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Prasnice chovné
+780790726,6715,5560,132,33,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Prasnice chovné
+780789275,5589,5560,132,33,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Prasnice chovné
+780788053,5258,5560,132,33,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Prasnice chovné
+780790211,1435,5560,132,33,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Prasnice chovné
+780789644,19276,5560,132,33,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Prasnice chovné
+780790130,18886,5560,132,50,2018-04-01,2018,100,3042,Počet hospodářských zvířat,Plzeňský kraj,Ovce
+780790590,14700,5560,132,50,2018-04-01,2018,100,3107,Počet hospodářských zvířat,Kraj Vysočina,Ovce
+780787669,16118,5560,132,50,2018-04-01,2018,100,3085,Počet hospodářských zvířat,Královéhradecký kraj,Ovce
+780789314,13027,5560,132,50,2018-04-01,2018,100,3051,Počet hospodářských zvířat,Karlovarský kraj,Ovce
+780787815,218915,5560,132,50,2018-04-01,2018,97,19,Počet hospodářských zvířat,Česká republika,Ovce
+780790567,15726,5560,132,50,2018-04-01,2018,100,3140,Počet hospodářských zvířat,Moravskoslezský kraj,Ovce
+780790585,12373,5560,132,50,2018-04-01,2018,100,3093,Počet hospodářských zvířat,Pardubický kraj,Ovce
+780790348,22744,5560,132,50,2018-04-01,2018,100,3131,Počet hospodářských zvířat,Zlínský kraj,Ovce
+780787749,29549,5560,132,50,2018-04-01,2018,100,3034,Počet hospodářských zvířat,Jihočeský kraj,Ovce
+780790239,9151,5560,132,50,2018-04-01,2018,100,3115,Počet hospodářských zvířat,Jihomoravský kraj,Ovce
+780789453,9936,5560,132,50,2018-04-01,2018,100,3123,Počet hospodářských zvířat,Olomoucký kraj,Ovce
+780789218,14668,5560,132,50,2018-04-01,2018,100,3069,Počet hospodářských zvířat,Ústecký kraj,Ovce
+780790715,16329,5560,132,50,2018-04-01,2018,100,3077,Počet hospodářských zvířat,Liberecký kraj,Ovce
+780788701,25708,5560,132,50,2018-04-01,2018,93,1,Počet hospodářských zvířat,Hlavní město Praha + Středočeský kraj,Ovce
