@@ -1,5 +1,3 @@
-package cz.matejcerny.bigdataexamples
-
 import org.apache.spark.sql.SparkSession
 import org.slf4j.{Logger, LoggerFactory}
 

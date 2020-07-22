@@ -1,19 +1,20 @@
-ThisBuild / organization := "cz.matejcerny.bigdataexamples"
-ThisBuild / scalaVersion := "2.11.8"
+Global / name := "BigDataExamples"
+Global / organization := "cz.matejcerny"
+Global / scalaVersion := "2.12.12"
+Global / assemblyJarName := s"${name.value}.jar"
 
-val sparkVersion = "2.4.0"
+val sparkVersion = "3.0.0"
 val slf4jVersion = "1.7.25"
 
-lazy val bigDataExamples = (project in file("."))
+lazy val BigDataExamples = project
+  .in(file("."))
   .settings(
-    name := "BigDataExamples",
-    assemblySettings,
     libraryDependencies ++= dependencies
   )
 
 lazy val dependencies = Seq(
   // TEST
-  "org.scalatest" %% "scalatest" % "3.0.4" % Test,
+  "org.scalatest" %% "scalatest" % "3.1.2" % Test,
   "org.mockito" % "mockito-core" % "2.23.4" % Test,
   // LOGS
   "org.slf4j" % "slf4j-api" % slf4jVersion,
@@ -23,13 +24,10 @@ lazy val dependencies = Seq(
   "org.apache.spark" %% "spark-sql" % sparkVersion
 )
 
-lazy val assemblySettings = Seq(
-  assembly / assemblyJarName := s"${name.value}.jar",
-  assembly / test := {},
-  assembly / assemblyMergeStrategy := {
-    case PathList("META-INF", _ @_*) => MergeStrategy.discard
-    case x =>
-      val oldStrategy = (assembly / assemblyMergeStrategy).value
-      oldStrategy(x)
-  }
+Global / scalacOptions ++= Seq(
+  "-deprecation", // Emit warning and location for usages of deprecated APIs.
+  "-feature", // Emit warning and location for usages of features that should be imported explicitly.
+  "-language:implicitConversions", // Allow definition of implicit functions called views
+  "-language:higherKinds", // Allow higher-kinded types
+  "-Ywarn-unused:imports" // Warn if an import selector is not referenced.
 )
