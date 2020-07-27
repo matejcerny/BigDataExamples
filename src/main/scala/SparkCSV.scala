@@ -48,6 +48,6 @@ object SparkCSV extends App with LocalSparkSession {
     .write
     .option("header", value = true)
     .mode("overwrite")
-    .csv("data/zvirata_2018.csv")
+    .csv("data/zvirata_2018")
 
 }

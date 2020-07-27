@@ -4,6 +4,7 @@ Global / scalaVersion := "2.12.12"
 Global / assemblyJarName := s"${name.value}.jar"
 
 val sparkVersion = "3.0.0"
+val deltaVersion = "0.7.0"
 val slf4jVersion = "1.7.25"
 
 lazy val BigDataExamples = project
@@ -21,7 +22,8 @@ lazy val dependencies = Seq(
   "org.slf4j" % "slf4j-log4j12" % slf4jVersion,
   // SPARK
   "org.apache.spark" %% "spark-core" % sparkVersion,
-  "org.apache.spark" %% "spark-sql" % sparkVersion
+  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "io.delta" %% "delta-core" % deltaVersion
 )
 
 Global / scalacOptions ++= Seq(

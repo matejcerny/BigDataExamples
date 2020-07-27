@@ -4,4 +4,4 @@ project/target
 spark-warehouse/
 target/
 derby.log
-_SUCCESS
+data/**/
