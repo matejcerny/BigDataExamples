@@ -8,7 +8,7 @@ import org.apache.spark.sql.types._
   *
   * [[https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-270230]]
   */
-object SparkCSVzvirata extends App with LocalSparkSession {
+object SparkCSV extends App with LocalSparkSession {
 
   val df = sparkSession.read
     .option("header", value = true)
