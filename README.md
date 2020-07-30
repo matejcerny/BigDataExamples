@@ -1,2 +1,2 @@
-# bigdata-examples
-Examples of how to use BigData technologies such as Apache Spark, Structured Streaming etc.
+# BigDataExamples
+Examples of some big data technologies such as Apache Spark, Delta Lake, Hyperspace etc.

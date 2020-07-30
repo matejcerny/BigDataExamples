@@ -1,3 +1,4 @@
+import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 
@@ -47,7 +48,7 @@ object SparkCSV extends App with LocalSparkSession {
     .coalesce(1)
     .write
     .option("header", value = true)
-    .mode("overwrite")
+    .mode(SaveMode.Overwrite)
     .csv("data/zvirata_2018")
 
 }

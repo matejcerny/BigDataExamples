@@ -5,6 +5,7 @@ Global / assemblyJarName := s"${name.value}.jar"
 
 val sparkVersion = "3.0.0"
 val deltaVersion = "0.7.0"
+val hyperspaceVersion = "0.1.0"
 val slf4jVersion = "1.7.25"
 
 lazy val BigDataExamples = project
@@ -23,7 +24,8 @@ lazy val dependencies = Seq(
   // SPARK
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
-  "io.delta" %% "delta-core" % deltaVersion
+  "io.delta" %% "delta-core" % deltaVersion,
+  "com.microsoft.hyperspace" %% "hyperspace-core" % hyperspaceVersion
 )
 
 Global / scalacOptions ++= Seq(
