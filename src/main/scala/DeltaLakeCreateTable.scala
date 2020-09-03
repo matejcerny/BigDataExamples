@@ -7,18 +7,18 @@ object DeltaLakeCreateTable extends App with LocalSparkSession {
   val df = sparkSession.read
     .option("header", value = true)
     .option("inferSchema", value = true)
-    .csv("data/obyvatelstvo.csv")
+    .csv("data/population.csv")
 
   /** Extract reference table */
   val dfRef = df
-    .select(col("obec"), col("okres"))
+    .select(col("city"), col("district"))
     .distinct()
-    .sort(col("obec"), col("okres"))
+    .sort(col("city"), col("district"))
     .withColumn("id", monotonically_increasing_id + 1)
     .select(
       col("id"),
-      col("obec").as("nazev"),
-      col("okres")
+      col("city").as("name"),
+      col("district")
     )
 
   dfRef.printSchema()
@@ -29,23 +29,23 @@ object DeltaLakeCreateTable extends App with LocalSparkSession {
     .write
     .format("delta")
     .mode(SaveMode.Overwrite)
-    .save("data/obyvatelstvo/obec")
+    .save("data/population/city")
 
   /** Replace reference columns with id */
   val dfData = df
     .join(
       dfRef.select(
-        col("id").as("obec_id"),
-        col("nazev").as("obec_nazev"),
-        col("okres").as("obec_okres")
+        col("id").as("cityId"),
+        col("name").as("cityName"),
+        col("district").as("cityDistrict")
       ),
-      col("okres") === col("obec_okres")
-        && col("obec") === col("obec_nazev")
+      col("district") === col("cityDistrict")
+        && col("city") === col("cityName")
     )
     .select(
-      col("obec_id"),
-      col("rok"),
-      col("pocet")
+      col("cityId"),
+      col("year"),
+      col("quantity")
     )
 
   dfData.printSchema()
@@ -56,6 +56,6 @@ object DeltaLakeCreateTable extends App with LocalSparkSession {
     .write
     .format("delta")
     .mode(SaveMode.Overwrite)
-    .save("data/obyvatelstvo/data")
+    .save("data/population/quantity")
 
 }

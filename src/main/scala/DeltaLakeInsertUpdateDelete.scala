@@ -4,12 +4,12 @@ import org.apache.spark.sql.functions.{col, lit}
 
 object DeltaLakeInsertUpdateDelete extends App with LocalSparkSession {
 
-  case class Obec(id: Long, nazev: String, okres: String)
-  val path = "data/obyvatelstvo/obec"
+  case class City(id: Long, name: String, district: String)
+  val path = "data/population/city"
 
   /** Insert new row */
   sparkSession
-    .createDataFrame(Seq(Obec(-999L, "AAA", "AAA")))
+    .createDataFrame(Seq(City(-999L, "AAA", "AAA")))
     .write
     .format("delta")
     .mode(SaveMode.Append)
@@ -19,8 +19,8 @@ object DeltaLakeInsertUpdateDelete extends App with LocalSparkSession {
   val deltaTable = DeltaTable.forPath(sparkSession, path)
 
   deltaTable.update(
-    col("nazev") === lit("AAA"),
-    Map("nazev" -> lit("BBB"))
+    col("name") === lit("AAA"),
+    Map("name" -> lit("BBB"))
   )
 
   deltaTable.delete(

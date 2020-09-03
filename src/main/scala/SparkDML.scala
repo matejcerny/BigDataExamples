@@ -8,22 +8,22 @@ object SparkDML extends App with LocalSparkSession {
     .csv("data/zvirata.csv")
 
   df.select(
-      col("hodnota").as("pocet"),
-      col("rok"),
-      col("DRUHZVIRE_txt").as("zvire")
+      col("hodnota").as("quantity"),
+      col("rok").as("year"),
+      col("DRUHZVIRE_txt").as("animal")
     )
     .filter(col("uzemi_txt") === lit("Olomoucký kraj"))
-    .filter(col("rok") === lit("2018"))
-    .orderBy(desc("pocet"))
+    .filter(col("year") === lit("2018"))
+    .orderBy(desc("quantity"))
     .show()
 
-  df.createOrReplaceTempView("zvirata")
+  df.createOrReplaceTempView("animals")
 
   sparkSession.sql(
-    """SELECT hodnota AS pocet
-      |     , rok
-      |     , DRUHZVIRE_txt AS zvire
-      |  FROM zvirata
+    """SELECT hodnota AS quantity
+      |     , rok AS year
+      |     , DRUHZVIRE_txt AS animal
+      |  FROM animals
       |  WHERE (uzemi_txt='Olomoucký kraj')
       |    AND (rok='2018')
       |  ORDER BY 1 DESC

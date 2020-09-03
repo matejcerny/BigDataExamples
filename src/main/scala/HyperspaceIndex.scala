@@ -5,13 +5,14 @@ object HyperspaceIndex extends App with LocalSparkSession {
 
   val df = sparkSession.read
     .format("delta")
-    .load("data/obyvatelstvo/data")
+    .load("data/population/quantity")
 
   df.printSchema()
+  println(df.queryExecution.optimizedPlan)
 
-  /** Hyperspace is currently not working with Spark 3.0 */
+  /** Currently not working with Delta */
   val hs = Hyperspace()
-  hs.createIndex(df, IndexConfig("idx", Seq("obec_id"), Seq("rok", "pocet")))
+  hs.createIndex(df, IndexConfig("idx", Seq("cityId"), Seq("year", "quantity")))
   hs.indexes.show()
 
 }
