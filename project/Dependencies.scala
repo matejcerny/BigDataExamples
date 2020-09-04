@@ -9,7 +9,7 @@ object Dependencies {
     val ScalaLogging = "3.9.2"
     val ScalaTest = "3.1.2"
     val SLF4J = "1.7.25"
-    val Spark = "2.4.4"
+    val Spark = "2.4.6"
   }
 
   object Modules {
@@ -40,7 +40,8 @@ object Dependencies {
 
   val Spark = Seq(
     Modules.Spark %% "spark-core" % Versions.Spark,
-    Modules.Spark %% "spark-sql" % Versions.Spark
+    Modules.Spark %% "spark-sql" % Versions.Spark,
+    Modules.Spark %% "spark-streaming" % Versions.Spark
   )
 
 }
