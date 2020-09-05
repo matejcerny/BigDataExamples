@@ -41,6 +41,7 @@ object Dependencies {
   val Spark = Seq(
     Modules.Spark %% "spark-core" % Versions.Spark,
     Modules.Spark %% "spark-sql" % Versions.Spark,
+    Modules.Spark %% "spark-sql-kafka-0-10" % Versions.Spark,
     Modules.Spark %% "spark-streaming" % Versions.Spark
   )
 
