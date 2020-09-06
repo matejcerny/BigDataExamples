@@ -12,11 +12,11 @@ object StructuredStreaming extends App with LocalSparkSession {
   val duration = FiniteDuration(2, TimeUnit.SECONDS)
 
   /** Streaming text files from disk */
-  val ds = sparkSession.readStream
+  val df = sparkSession.readStream
     .schema(schema)
     .text("data/stream")
 
-  val stream = ds.writeStream
+  val stream = df.writeStream
     .trigger(Trigger.ProcessingTime(duration))
     .outputMode(OutputMode.Append())
     .foreachBatch { (df: DataFrame, _: Long) =>
