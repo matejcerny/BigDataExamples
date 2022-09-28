@@ -1,5 +1,5 @@
 import org.apache.spark.sql.SparkSession
-import org.slf4j.{Logger, LoggerFactory}
+import org.slf4j.{ Logger, LoggerFactory }
 
 trait LocalSparkSession {
 

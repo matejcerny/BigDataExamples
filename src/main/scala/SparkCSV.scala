@@ -2,10 +2,8 @@ import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 
-/**
-  * Hospodářská zvířata podle krajů, Český statistický úřad
-  * Datová sada obsahuje časovou řadu s údaji o stavech hospodářských
-  * zvířat v krajích České republiky od roku 2002.
+/** Hospodářská zvířata podle krajů, Český statistický úřad Datová sada obsahuje časovou řadu s údaji o stavech
+  * hospodářských zvířat v krajích České republiky od roku 2002.
   *
   * [[https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-270230]]
   */

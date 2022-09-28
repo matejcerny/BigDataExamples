@@ -3,42 +3,42 @@ import sbt._
 object Dependencies {
 
   object Versions {
-    val Delta = "0.6.0"
-    val Frameless = "0.8.0"
-    val Hyperspace = "0.2.0"
-    val ScalaLogging = "3.9.2"
-    val ScalaTest = "3.1.2"
-    val SLF4J = "1.7.25"
-    val Spark = "2.4.6"
+    val Delta = "2.1.0"
+    val Frameless = "0.13.0"
+    val Logback = "1.4.1"
+    val ScalaTest = "3.2.12"
+    val SLF4J = "2.0.1"
+    val Spark = "3.3.0"
   }
 
   object Modules {
     val Delta = "io.delta"
     val Frameless = "org.typelevel"
-    val Hyperspace = "com.microsoft.hyperspace"
-    val ScalaLogging = "com.typesafe.scala-logging"
+    val Logback = "ch.qos.logback"
     val ScalaTest = "org.scalatest"
     val SLF4J = "org.slf4j"
     val Spark = "org.apache.spark"
   }
 
-  val Delta = Seq(Modules.Delta %% "delta-core" % Versions.Delta)
+  val Delta: Seq[ModuleID] = Seq(
+    Modules.Delta %% "delta-core" % Versions.Delta
+  )
 
-  val Frameless = Seq(
+  val Frameless: Seq[ModuleID] = Seq(
     Modules.Frameless %% "frameless-dataset" % Versions.Frameless,
     Modules.Frameless %% "frameless-cats" % Versions.Frameless
   )
 
-  val Hyperspace = Seq(Modules.Hyperspace %% "hyperspace-core" % Versions.Hyperspace)
-
-  val Logging = Seq(
-    Modules.ScalaLogging %% "scala-logging" % Versions.ScalaLogging,
+  val Logging: Seq[ModuleID] = Seq(
+    Modules.Logback % "logback-classic" % Versions.Logback,
     Modules.SLF4J % "slf4j-api" % Versions.SLF4J
   )
 
-  val ScalaTest = Seq(Modules.ScalaTest %% "scalatest" % Versions.ScalaTest % Test)
+  val ScalaTest: Seq[ModuleID] = Seq(
+    Modules.ScalaTest %% "scalatest" % Versions.ScalaTest % Test
+  )
 
-  val Spark = Seq(
+  val Spark: Seq[ModuleID] = Seq(
     Modules.Spark %% "spark-core" % Versions.Spark,
     Modules.Spark %% "spark-sql" % Versions.Spark,
     Modules.Spark %% "spark-sql-kafka-0-10" % Versions.Spark,

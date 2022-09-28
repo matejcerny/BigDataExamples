@@ -1,14 +1,13 @@
 import Dependencies._
 
-Global / name := "BigDataExamples"
-Global / organization := "cz.matejcerny"
-Global / scalaVersion := "2.12.12"
-Global / assemblyJarName := s"${name.value}.jar"
+ThisBuild / name := "BigDataExamples"
+ThisBuild / organization := "cz.matejcerny"
+ThisBuild / scalaVersion := "2.13.9"
 
 lazy val BigDataExamples = project
   .in(file("."))
   .settings(
-    libraryDependencies ++= Delta ++ Frameless ++ Hyperspace ++ Logging ++ ScalaTest ++ Spark
+    libraryDependencies ++= Delta ++ Frameless ++ Logging ++ ScalaTest ++ Spark
   )
 
 Global / scalacOptions ++= Seq(

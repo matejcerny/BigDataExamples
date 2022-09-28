@@ -1,16 +1,16 @@
+import frameless.{ Job, TypedDataset }
 import frameless.functions.aggregate.avg
 import frameless.syntax._
-import frameless.{Job, TypedDataset}
 
 object Frameless extends App with LocalSparkSession {
 
-  import sparkSession.implicits._
   case class Population(cityId: Long, year: Int, quantity: Int)
-  val path = "data/population/quantity"
+
+  import sparkSession.implicits._
 
   val df = sparkSession.read
     .format("delta")
-    .load(path)
+    .load("data/population/quantity")
     .as[Population]
 
   val tds = TypedDataset.create(df)

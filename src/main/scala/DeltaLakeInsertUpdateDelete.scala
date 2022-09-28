@@ -1,13 +1,13 @@
 import io.delta.tables.DeltaTable
 import org.apache.spark.sql.SaveMode
-import org.apache.spark.sql.functions.{col, lit}
+import org.apache.spark.sql.functions.{ col, lit }
 
 object DeltaLakeInsertUpdateDelete extends App with LocalSparkSession {
 
   case class City(id: Long, name: String, district: String)
   val path = "data/population/city"
 
-  /** Insert new row */
+  /** Insert a new row */
   sparkSession
     .createDataFrame(Seq(City(-999L, "AAA", "AAA")))
     .write
@@ -38,9 +38,7 @@ object DeltaLakeInsertUpdateDelete extends App with LocalSparkSession {
     .mode(SaveMode.Overwrite)
     .save(path)
 
-  /**
-    * Flush history to keep just the newest data
-    * (only where no other process is using this table)
+  /** Flush history to keep just the newest data (only where no other process is using this table)
     */
   deltaTable.vacuum(0)
 

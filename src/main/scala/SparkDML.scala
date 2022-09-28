@@ -8,19 +8,19 @@ object SparkDML extends App with LocalSparkSession {
     .csv("data/zvirata.csv")
 
   df.select(
-      col("hodnota").as("quantity"),
-      col("rok").as("year"),
-      col("DRUHZVIRE_txt").as("animal")
-    )
-    .filter(col("uzemi_txt") === lit("Olomoucký kraj"))
+    col("hodnota").as("quantity"),
+    col("rok").as("year"),
+    col("DRUHZVIRE_txt").as("animal")
+  ).filter(col("uzemi_txt") === lit("Olomoucký kraj"))
     .filter(col("year") === lit("2018"))
     .orderBy(desc("quantity"))
     .show()
 
   df.createOrReplaceTempView("animals")
 
-  sparkSession.sql(
-    """SELECT hodnota AS quantity
+  sparkSession
+    .sql(
+      """SELECT hodnota AS quantity
       |     , rok AS year
       |     , DRUHZVIRE_txt AS animal
       |  FROM animals
@@ -28,7 +28,7 @@ object SparkDML extends App with LocalSparkSession {
       |    AND (rok='2018')
       |  ORDER BY 1 DESC
       |""".stripMargin
-  ).show()
-
+    )
+    .show()
 
 }

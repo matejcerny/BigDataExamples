@@ -1,20 +1,20 @@
 import org.apache.spark.sql.SaveMode
-import org.apache.spark.sql.functions.{col, monotonically_increasing_id}
+import org.apache.spark.sql.functions.{ col, monotonically_increasing_id }
 
 object DeltaLakeCreateTable extends App with LocalSparkSession {
 
-  /** Read CSV */
+  /** Read the CSV */
   val df = sparkSession.read
     .option("header", value = true)
     .option("inferSchema", value = true)
     .csv("data/population.csv")
 
-  /** Extract reference table */
+  /** Extract a reference table */
   val dfRef = df
     .select(col("city"), col("district"))
     .distinct()
     .sort(col("city"), col("district"))
-    .withColumn("id", monotonically_increasing_id + 1)
+    .withColumn("id", monotonically_increasing_id() + 1)
     .select(
       col("id"),
       col("city").as("name"),
@@ -23,7 +23,7 @@ object DeltaLakeCreateTable extends App with LocalSparkSession {
 
   dfRef.printSchema()
 
-  /** Save reference table as delta table */
+  /** Save a reference table as a delta table */
   dfRef
     .repartition(1)
     .write
@@ -50,7 +50,7 @@ object DeltaLakeCreateTable extends App with LocalSparkSession {
 
   dfData.printSchema()
 
-  /** Save data as delta table */
+  /** Save the data as a delta table */
   dfData
     .repartition(1)
     .write

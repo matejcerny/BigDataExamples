@@ -1,7 +1,7 @@
 import java.util.concurrent.TimeUnit
 
 import org.apache.spark.sql.DataFrame
-import org.apache.spark.sql.streaming.{OutputMode, Trigger}
+import org.apache.spark.sql.streaming.{ OutputMode, Trigger }
 
 import scala.concurrent.duration.FiniteDuration
 
