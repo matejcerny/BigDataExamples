@@ -21,12 +21,12 @@ object SparkDML extends App with LocalSparkSession {
   sparkSession
     .sql(
       """SELECT hodnota AS quantity
-      |     , rok AS year
-      |     , DRUHZVIRE_txt AS animal
-      |  FROM animals
-      |  WHERE (uzemi_txt='Olomoucký kraj')
-      |    AND (rok='2018')
-      |  ORDER BY 1 DESC
+      |       , rok AS year
+      |       , DRUHZVIRE_txt AS animal
+      |    FROM animals
+      |    WHERE (uzemi_txt='Olomoucký kraj')
+      |      AND (rok='2018')
+      |    ORDER BY 1 DESC
       |""".stripMargin
     )
     .show()
