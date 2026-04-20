@@ -2,12 +2,12 @@ import Dependencies._
 
 ThisBuild / name := "BigDataExamples"
 ThisBuild / organization := "cz.matejcerny"
-ThisBuild / scalaVersion := "2.13.16"
+ThisBuild / scalaVersion := "3.7.4"
 
 lazy val BigDataExamples = project
   .in(file("."))
   .settings(
-    libraryDependencies ++= Delta ++ Frameless ++ ScalaTest ++ Spark
+    libraryDependencies ++= Delta ++ Spark ++ SparkOn3
   )
 
 Global / scalacOptions ++= Seq(
@@ -15,5 +15,5 @@ Global / scalacOptions ++= Seq(
   "-feature", // Emit warning and location for usages of features that should be imported explicitly.
   "-language:implicitConversions", // Allow definition of implicit functions called views
   "-language:higherKinds", // Allow higher-kinded types
-  "-Ywarn-unused:imports" // Warn if an import selector is not referenced.
+  "-Wunused:imports" // Warn if an import selector is not referenced.
 )

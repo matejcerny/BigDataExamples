@@ -47,8 +47,8 @@ object SparkPLSQLAdvanced extends App with LocalSparkSession {
       |  DO
       |    SET insert_stmt = 'INSERT INTO ' || metadata.target_name ||
       |                      '  SELECT * FROM ' || metadata.source_name ||
-      |                      '  WHERE id > ?';
-      |    EXECUTE IMMEDIATE insert_stmt USING metadata.last_processed_id;
+      |                      '  WHERE id > ' || metadata.last_processed_id;
+      |    EXECUTE IMMEDIATE insert_stmt;
       |
       |    SET get_new_max_id_stmt = 'SELECT MAX(id) FROM ' || metadata.source_name;
       |    EXECUTE IMMEDIATE get_new_max_id_stmt INTO new_max_id;
