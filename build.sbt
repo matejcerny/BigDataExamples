@@ -1,4 +1,4 @@
-import Dependencies._
+import Dependencies.*
 
 ThisBuild / name := "BigDataExamples"
 ThisBuild / organization := "cz.matejcerny"
