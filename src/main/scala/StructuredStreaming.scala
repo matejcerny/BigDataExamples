@@ -6,7 +6,7 @@ import org.apache.spark.sql.types.{ StringType, StructField, StructType }
 
 import scala.concurrent.duration.FiniteDuration
 
-object StructuredStreaming extends App with LocalSparkSession {
+object StructuredStreaming extends App with LocalSparkSession:
 
   val schema = StructType(Seq(StructField("text", StringType)))
   val duration = FiniteDuration(2, TimeUnit.SECONDS)
@@ -25,5 +25,3 @@ object StructuredStreaming extends App with LocalSparkSession {
     .start()
 
   stream.awaitTermination()
-
-}

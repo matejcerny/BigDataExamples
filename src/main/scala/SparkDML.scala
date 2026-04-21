@@ -1,6 +1,6 @@
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.*
 
-object SparkDML extends App with LocalSparkSession {
+object SparkDML extends App with LocalSparkSession:
 
   val df = sparkSession.read
     .option("header", value = true)
@@ -30,5 +30,3 @@ object SparkDML extends App with LocalSparkSession {
       |""".stripMargin
     )
     .show()
-
-}

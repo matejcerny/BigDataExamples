@@ -1,7 +1,7 @@
 import org.apache.spark.sql.SparkSession
 import org.slf4j.{ Logger, LoggerFactory }
 
-trait LocalSparkSession {
+trait LocalSparkSession:
 
   @transient lazy val logger: Logger = LoggerFactory.getLogger(getClass.getName)
 
@@ -13,4 +13,3 @@ trait LocalSparkSession {
     .config("spark.databricks.delta.retentionDurationCheck.enabled", value = false)
     .config("spark.sql.scripting.enabled", value = true)
     .getOrCreate()
-}

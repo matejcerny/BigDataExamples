@@ -5,7 +5,7 @@ import org.apache.spark.sql.streaming.{ OutputMode, Trigger }
 
 import scala.concurrent.duration.FiniteDuration
 
-object KafkaConsumer extends App with LocalSparkSession {
+object KafkaConsumer extends App with LocalSparkSession:
 
   val options = Map(
     ("kafka.bootstrap.servers", "localhost:9092"),
@@ -27,4 +27,3 @@ object KafkaConsumer extends App with LocalSparkSession {
     .start()
 
   stream.awaitTermination()
-}

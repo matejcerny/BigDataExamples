@@ -1,8 +1,9 @@
-object SparkPLSQLAdvanced extends App with LocalSparkSession {
+object SparkPLSQLAdvanced extends App with LocalSparkSession:
 
   /** Prepare delta tables and test data */
-  sparkSession.sql(
-    """
+  sparkSession
+    .sql(
+      """
       |BEGIN
       |  CREATE TABLE raw_events (
       |      id INT
@@ -31,11 +32,13 @@ object SparkPLSQLAdvanced extends App with LocalSparkSession {
       |  SELECT * FROM etl_metadata;
       |END
       |""".stripMargin
-  ).show()
+    )
+    .show()
 
   /** Migrate data from raw to processed table and update the last id in metadata table */
-  sparkSession.sql(
-    """
+  sparkSession
+    .sql(
+      """
       |BEGIN
       |  DECLARE new_max_id INT;
       |  DECLARE get_new_max_id_stmt STRING;
@@ -65,9 +68,9 @@ object SparkPLSQLAdvanced extends App with LocalSparkSession {
       |  SELECT * FROM etl_metadata;
       |END
       |""".stripMargin
-  ).show()
+    )
+    .show()
 
   sparkSession.sql("DROP TABLE IF EXISTS raw_events")
   sparkSession.sql("DROP TABLE IF EXISTS processed_events")
   sparkSession.sql("DROP TABLE IF EXISTS etl_metadata")
-}

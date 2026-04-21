@@ -1,7 +1,7 @@
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.functions.{ col, monotonically_increasing_id }
 
-object DeltaLakeCreateReferenceTable extends App with LocalSparkSession {
+object DeltaLakeCreateReferenceTable extends App with LocalSparkSession:
 
   /** Read the CSV */
   val df = sparkSession.read
@@ -57,5 +57,3 @@ object DeltaLakeCreateReferenceTable extends App with LocalSparkSession {
     .format("delta")
     .mode(SaveMode.Overwrite)
     .save("data/population/quantity")
-
-}

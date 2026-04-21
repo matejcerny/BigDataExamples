@@ -7,7 +7,7 @@ import org.apache.spark.sql.functions.{ col, lit }
   *
   * [[https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2Ff9a50772981c2bb3237277fff76bd969]]
   */
-object DeltaLakeCreateTable extends App with LocalSparkSession {
+object DeltaLakeCreateTable extends App with LocalSparkSession:
 
   val path = "data/population_delta"
 
@@ -35,5 +35,3 @@ object DeltaLakeCreateTable extends App with LocalSparkSession {
     .filter(col("city") === lit("Praha"))
     .filter(col("year") <= lit(1900))
     .show()
-
-}

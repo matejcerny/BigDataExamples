@@ -1,7 +1,8 @@
-object SparkPLSQL extends App with LocalSparkSession {
+object SparkPLSQL extends App with LocalSparkSession:
 
-  sparkSession.sql(
-    """
+  sparkSession
+    .sql(
+      """
       |BEGIN
       |  DECLARE i INT DEFAULT 0;
       |
@@ -15,7 +16,7 @@ object SparkPLSQL extends App with LocalSparkSession {
       |  SELECT * FROM my_table ORDER BY number;
       |END
       |""".stripMargin
-  ).show()
+    )
+    .show()
 
   sparkSession.sql("DROP TABLE IF EXISTS my_table")
-}
