@@ -56,7 +56,7 @@ object Wick extends App with LocalSparkSession:
 
   df.createOrReplaceTempView("livestock")
 
-  // Untyped SQL twin: a typo in `cattle` or a bad `cattle + entity`
+  // Untyped SQL twins: a typo in `cattle` or a bad `cattle + entity`
   // only blows up after `spark-submit` lands on the cluster.
   sparkSession
     .sql(
@@ -65,6 +65,17 @@ object Wick extends App with LocalSparkSession:
         |  FROM livestock
         |  WHERE year = 2014
         |  ORDER BY total_millions DESC
+        |""".stripMargin
+    )
+    .show()
+
+  sparkSession
+    .sql(
+      """SELECT entity
+        |     , SUM(cattle) / 1000000 AS cattle_total_millions
+        |  FROM livestock
+        |  GROUP BY entity
+        |  ORDER BY cattle_total_millions DESC
         |""".stripMargin
     )
     .show()
